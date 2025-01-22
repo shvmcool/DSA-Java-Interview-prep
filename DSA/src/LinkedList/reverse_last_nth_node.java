@@ -20,7 +20,7 @@ public class reverse_last_nth_node {
 	            temp = temp.next;
 	        }
 	        ListNode temp2 = head;
-	        if(x == n){
+	        if(x == n){ //if question ask for removing first node 
 	            return head.next;
 	        }
 	        for(int i =0 ; i < x ;i++){
