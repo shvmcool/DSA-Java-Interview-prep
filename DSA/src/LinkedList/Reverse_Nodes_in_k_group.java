@@ -55,5 +55,35 @@ public class Reverse_Nodes_in_k_group {
 	        }
 	        return prev;
 	    }
+	    //SECOND APPROCH WITHOUT CALLING HELPERS FUNCTION 
+	    class Solution {
+	        public ListNode reverseKGroup(ListNode head, int k) {
+	            int x=1;
+	            ListNode temp =head;
+	            while(temp.next != null){
+	                x++;
+	                temp = temp.next;
+	            }
+	            ListNode dummy = new ListNode(-1,head);
+	           ListNode pre = dummy;
+	           
+	            while(x/k!=0){
+	               ListNode cur = pre.next ;
+	            ListNode nex =cur.next;
+	                for(int i =1; i < k ; i++){
+	                        cur.next = nex.next;
+	                        nex.next = pre.next;
+	                        pre.next = nex;
+	                        nex = cur.next;
+	                }
+	                x-=k;
+	                pre = cur;
+	            }
+	           
+
+	        return dummy.next;
+	        }
+
+	    }
 	}
 
