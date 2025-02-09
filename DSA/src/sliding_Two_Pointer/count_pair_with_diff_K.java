@@ -19,7 +19,7 @@ public class count_pair_with_diff_K {
                 //count how many elements in the array that appear more than twice.
                 if (entry.getValue() >= 2) {
                     count++;
-                } 
+                }
             } else {
                 if (map.containsKey(entry.getKey() + k)) {
                     count++;

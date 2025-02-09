@@ -3,7 +3,7 @@ package Arrays;
 import java.util.*;
 
 public class subarraySumWithK {
-
+  //https://leetcode.com/problems/subarray-sum-equals-k/description/
     public int subarraySum(int[] nums, int k) {
         int prefixsum = 0;
          int count = 0;
