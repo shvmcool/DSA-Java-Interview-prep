@@ -11,7 +11,7 @@ public class Bottom_view_of_tree {
 	     Queue<TreeNode> queue = new LinkedList<>();
 	     root.hd = 0;
 	     queue.add(root);
-	     Map<Integer,Integer> treeMap = new TreeMap<>();
+	     Map<Integer,Integer> treeMap = new TreeMap<>(); // for key in sorted order
 	      while(!queue.isEmpty()){
 	          TreeNode curr= queue.poll();
 	          treeMap.put(curr.hd,curr.val);
