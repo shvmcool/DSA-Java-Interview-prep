@@ -3,7 +3,6 @@ package greedyAndHeap;
 import java.util.PriorityQueue;
 
 public class Kth_weakest_row_in_matrix {
-	class Solution {
 	    public int[] kWeakestRows(int[][] mat, int k) {
 	        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[0] != b[0] ? b[0] - a[0] : b[1] - a[1]); // strenter at first in queue
 	        int i = 0;
