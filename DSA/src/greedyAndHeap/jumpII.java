@@ -18,7 +18,7 @@ public class jumpII {
 	}
 
 
-  //Using DYNAMIC-PROGRAMMING
+  //Using DYNAMIC-PROGRAMMING TIME LIMIT EXCEEDED
 //class Solution {
 //    // using dp 
 //    public int jump(int[] nums) {
