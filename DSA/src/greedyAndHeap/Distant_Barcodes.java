@@ -17,7 +17,7 @@ public class Distant_Barcodes {
 	            int[] res = new int[barcodes.length];
 	        int i = 0;
 	        while(!queue.isEmpty()){
-	            int k = 2;
+	            int k = 2; // because at each iteration we are filling two distant numbers
 	            List<Map.Entry<Integer,Integer>> temp = new ArrayList<>();
 	            while(k>0 && !queue.isEmpty()){
 	                Map.Entry<Integer, Integer> head = queue.poll();
