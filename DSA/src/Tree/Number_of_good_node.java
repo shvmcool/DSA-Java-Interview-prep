@@ -1,5 +1,5 @@
 package Tree;
-
+//https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/
 public class Number_of_good_node {
 	    int count=0;
 	    public int countPairs(TreeNode root, int distance) {
