@@ -24,6 +24,7 @@ public class Boundary_Traversal {
 	        ans.addAll(rightinReverse);
 	        return ans;
 	    }
+	    //excluding leaf nodes
 	    public void addLeftBoundary(TreeNode node , List<Integer> ans){
 	         if(node == null){
 	             return;
@@ -47,6 +48,7 @@ public class Boundary_Traversal {
 	         addLeafNodes(node.right,ans);
 	         
 	    }
+	      //excluding leaf nodes
 	       public void addRightBoundary(TreeNode node , List<Integer> ans){
 	         if(node == null){
 	             return;

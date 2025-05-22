@@ -1,5 +1,5 @@
 package Tree;
-
+//https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
 public class Flatten_Tree_to_LinkedList {
     public void flatten(TreeNode root) {
         TreeNode[] prevarr= new TreeNode[1];
