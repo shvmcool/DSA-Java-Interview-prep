@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class non_overlapping_interval {
 	    public int eraseOverlapIntervals(int[][] intervals) {
-	        Arrays.sort(intervals,(a,b)->a[1]-b[1]);
+	        Arrays.sort(intervals,(a,b)->a[1]-b[1]); // sorting on the ending time
 	         int end = intervals[0][1];
 	         int ans = 0 ;
 	         for(int i =1 ; i < intervals.length; i++){
