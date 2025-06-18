@@ -7,7 +7,7 @@ public class non_overlapping_interval {
 	        Arrays.sort(intervals,(a,b)->a[1]-b[1]); // sorting on the ending time
 	         int end = intervals[0][1];
 	         int ans = 0 ;
-	         for(int i =1 ; i < intervals.length; i++){
+	         for(int i =1 ; i < intervals.length; i++){ // started from 1 as 0th is already there
 	            if(intervals[i][0] <end ){
 	                ans++;
 	            }

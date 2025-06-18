@@ -2,6 +2,9 @@ package greedyAndHeap;
 
 public class jumpII {
 	//https://leetcode.com/problems/jump-game-ii/
+	
+	//HERE WE USE WINDOW AND POSITION OUR CURRENT INDEX TO BE FARTHEST WE CAN GO TO END USING
+	// VALUE WITHIN THE WINDOW
 	    public int jump(int[] nums) {
 	    int farthest = 0 ;
 	    int jump = 0 ;
